@@ -18,7 +18,8 @@ class MyTestCase(unittest.TestCase):
         for _ in range(100):
             pointA = tuple(random.randint(0, 100) for _ in range(2))
             pointB = tuple(random.randint(0, 100) for _ in range(2))
-            self.assertAlmostEqual(dist(pointA, pointB), my_distant(pointA, pointB),msg="Incorrect realization" ,delta=0.00001)
+            self.assertAlmostEqual(dist(pointA, pointB), my_distant(pointA, pointB), msg="Incorrect realization",
+                                   delta=0.00001)
 
 
 if __name__ == '__main__':
