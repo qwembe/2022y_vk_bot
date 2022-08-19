@@ -43,8 +43,8 @@ jobs:
           echo flace - success
           
           
-#       - name: Test with unittest
-#         run: |
-#           python -m unittest test/test_00
+      - name: Test with unittest
+        run: |
+          python -m unittest test/test_00
 
           
